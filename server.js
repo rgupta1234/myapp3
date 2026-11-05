@@ -51,7 +51,7 @@ http.createServer(async (req, res) => {
     const ver = await pool.query("SHOW server_version");
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(
-      '<div style="background:#EE0000;color:#fff;padding:32px;font:40px sans-serif">' + msg +
+      '<div style="background:#EE0000;color:#fff;padding:32px;font:4px sans-serif">' + msg +
       "<br><small>Built " + builtAt + " (" + build + ")</small>" +
       "<br><small>Base image: " + baseVersion + "</small></div>" +
       '<div style="padding:16px 32px;font:20px sans-serif">Visits stored in PostgreSQL ' +
